@@ -24,13 +24,13 @@ p {
     font-size: 16px
 }
 
-a {
+i {
    text-decoration: none;
    position: relative;
    transition: opacity 300ms ease;
 } 
 
-i:hover {
+a:hover {
     opacity: 0.7;
 }
 
@@ -232,12 +232,13 @@ Nav {
 
 .about-me__img {
     width: 100%;
-    animation: fade-in 1200ms 800ms backwards;
+    animation: fade-up 650ms 400ms backwards;
 }
 
-@keyframes fade-in {
+@keyframes fade-in{
     0% {
         opacity: 0;
+        transform : translateY(40px);
     }
     100% {
         opacity: 1;
